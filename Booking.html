@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharaعna - Book Your Adventure</title>
+  
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.modal {
+    display:contents; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+  
+    width: 60%; /* Full width */
+    height: 75%; /* Full height */
+    background-color: rgba(151, 48, 48, 0.4); /* Black w/ opacity */
+    padding-top: 90px;
+    
+}
+
+.body{
+    background-image: url("bb4d1402-e23c-4d68-8b5f-444b93333740.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #c83939;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+h1{
+color: rgb(23, 19, 19);
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the input fields */
+input[type=text], input[type=date], input[type=number], select {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid #ccc;
+    border-radius: 7px;
+}
+
+/* Style the submit button */
+button[type=submit] {
+    width: 60%;
+    padding: 15px;
+    background-color: #f9f7f0;
+    color: rgb(5, 4, 4);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #555;
+}
+/* Existing styles for header, sections, etc... */
+
+/* Pop-up styles */
+.booking-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Ensure it's on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(64, 60, 60, 0.5); /* Semi-transparent background */
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 50%; /* Adjust as needed */
+    padding: 20px;
+    margin: 10% auto; /* Central alignment */
+    border-radius: 5px; /* Optional rounded corners */
+    position: relative;
+}
+
+.close-popup {
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Style the form elements */
+/* ... */
+ .p{
+    text-align: center;
+    font-weight:50;
+ }
+</style>
+
+
+
+    
+</head>
+<body style=" background-image: url('bb4d1402-e23c-4d68-8b5f-444b93333740.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <header>
+        <h1>Find An Amazing Place To Visit</h1>
+    </header>
+
+    <!-- The Pop-up Booking Form, hidden by default -->
+    <div id="bookingPopup" class="booking-popup" style="display:contents;">
+        
+            
+            <h2>Book Your Trip</h2>
+            <form id="bookingForm">
+                <!-- Form fields -->
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+<br>
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" required>
+                <br>
+
+                <label for="numCities">Num Cities:</label>
+                <input type="number" id="numCities" name="numCities" min="1" value="1" required>
+                <br>
+
+                <label for="numAdults">Num Adults:</label>
+                <input type="number" id="numAdults" name="numAdults" min="1" value="1" required>
+                <br>
+
+                <label for="numChildren">Num Childs:</label>
+                <input type="number" id="numChildren" name="numChildren" min="0" value="0" required>
+                <br>
+
+                <label for="selectHotel">Select Hotel:</label>
+                <select id="selectHotel" name="selectHotel">
+                    <option value="hotel1">Hotel 1</option>
+                    
+                    <!-- Other hotel options -->
+                </select>
+                <button type="submit" class="book-now-btn">Book Now</button>
+            </form>
+    
+    </div>
+
+    <!-- Rest of the page content -->
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="grid-container">
+            <!-- Destination images and descriptions -->
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pharaعna - All rights reserved</p>
+    </footer>
+
+ 
+</body>
+</html>

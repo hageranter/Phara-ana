@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharaعna - Book Your Adventure</title>
+    <link rel="stylesheet" href="travel.css">
+
+
+   </head>
+   <body>
+    <header>
+        <h1>Find Next Place To Visit</h1>
+        <p>Discover amazing places at exclusive deals</p>
+        <div class="search-bar">
+            
+<!-- "Book a Plan" button -->
+<a href="Booking.html">
+    <button type="button">Book a plan</button>
+  </a>
+
+    </header>
+
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        
+            <div class="grid-container">
+                <div>
+                    <img src="R (1).jpeg" alt="Coastal Cities">
+                    <p>Coastal Cities</p>
+                </div>
+                <div>
+                    <img src="R (4).jpeg" alt="Desert">
+                    <p>Desert</p>
+                </div>
+                <div>
+                    <img src="R (5).jpeg" alt="Agriculture">
+                    <p>Agriculture</p>
+                </div>
+            </div>
+        </section>
+        
+        
+            
+
+    <section class="hotels">
+        <h2>Recommended Hotels</h2>
+        <div class="grid-container">
+            <!-- Add hotel divs here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pharaعna - All rights reserved</p>
+    </footer>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the "Book a plan" button
+    var bookButton = document.querySelector('header .search-bar button');
+
+    // Event listener for the button click
+    bookButton.addEventListener('click', function(event) {
+        // Prevent the default action
+        event.preventDefault();
+        // Display a confirmation message
+        alert('Thank you for choosing to book with us! We will take you to the booking page.');
+        // Redirect to the booking page after 1 second
+        setTimeout(function() {
+            window.location.href = 'Booking.html';
+        }, 1000);
+    });
+});
+
+
+    </script>
+</body>
+</html>

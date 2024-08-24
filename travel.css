@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-image: url("egypt-luxor-temple-of-deir-al-bahri (3).jpg");
+      background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    color: #ffffff;
+    background-repeat:no-repeat;
+    background-attachment:fixed ;
+    height: 400px;
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="number"],
+.search-bar button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+}
+
+.destinations h2,
+.hotels h2 {
+    text-align: center;
+    padding: 20px;
+}
+.destinations .grid-container {
+    display: flex;  /* Align children in a row */
+    justify-content: center;  /* Center the items in the container */
+    align-items: center;  /* Align items vertically */
+    gap: 20px;  /* Space between items */
+    padding: 20px;
+    background-color: white;
+}
+
+.destinations .grid-container div {
+    flex: 1;  /* Each child will take up an equal amount of space */
+    text-align: center;  /* Center text within each child */
+}
+
+.destinations img {
+    max-width: 100%;  /* Make image responsive */
+    height: auto;  /* Maintain aspect ratio */
+    display: block;  /* Prevent default inline behavior */
+    margin: 0 auto;  /* Center image if it's not as wide as container */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-container div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.grid-container div:hover {
+    transform: translateY(-5px);
+}
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6b6b; /* Example button color */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    /* Optional: Add other styles to make it look more like a button */
+}
+
+.button-link:hover {
+    background-color: #e65a5a; /* Slightly darker on hover */
+    text-decoration: none; /* Ensures no underline appears */
+    /* Add other hover effects if you like */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+}
